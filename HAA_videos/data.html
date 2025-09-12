@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 30px 0;
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 20px 0 10px 0;
+            font-size: 1.5em;
+            color: #444;
+            text-align: center;
+            width: 100%;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+            text-align: left;
+            width: 100%;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .media-grid video,
+        .media-grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: fill;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Training Videos and Testing Images</h1>
+    <div id="gallery"></div>
+
+    <script>
+        const selectedCategories = ["basketball_hookshot", "canoeing_sprint", "shoot_dance", "face_slapping","soccer_shoot", "sprint_run", "backflip", "balancebeam_jump", "balancebeam_spin", "chopping_wood", "ALS_IceBucket_Challenge", "pushup", "hugging_human", "drinking_with_cup", "arm_wave", "running_in_place"];
+        const categoryTitles = {
+            "pushup": "A person is performing a pushup",
+            "soccer_shoot": "A person is shooting a soccer ball",
+            "running_in_place": "A person is running in place",
+            "arm_wave": "A person is performing an arm wave",
+            "shoot_dance": "A person is doing the shoot dance",
+            "face_slapping": "A person is slapping another person's face",
+            "hugging_human": "Two people are hugging",
+            "drinking_with_cup": "A person is drinking from a cup",
+            "sprint_run": "A person runs in a sprint",
+            "ALS_IceBucket_Challenge": "A person is pouring water over his/her head as part of the ALS Ice Bucket Challenge",
+            "balancebeam_jump": "An athlete is performing a balance beam jump",
+            "canoeing_sprint": "A person is paddling a canoe at full speed",
+            "chopping_wood": "A person is chopping wood",
+            "balancebeam_spin": "An athlete is performing a balance beam spin",
+            "backflip": "A person is performing a backward flip",
+            "basketball_hookshot": "A person is releasing the basketball in a hook shot",
+        };
+
+        fetch("data.json")
+            .then(res => res.json())
+            .then(allMediaData => {
+                let mediaData = {};
+                selectedCategories.forEach(cat => {
+                    if (allMediaData[cat]) {
+                        mediaData[cat] = allMediaData[cat];
+                    }
+                });
+
+                renderGallery(mediaData);
+            });
+
+        function createMediaGrid(items, isVideo = false) {
+            const grid = document.createElement("div");
+            grid.className = "media-grid";
+
+            items.forEach(src => {
+                if (isVideo) {
+                    const video = document.createElement("video");
+                    video.setAttribute("data-src", src); 
+                    video.muted = true; 
+                    video.autoplay = true;
+                    video.playsInline = true;
+                    video.loop = true;
+                    grid.appendChild(video);
+                } else {
+                    const img = document.createElement("img");
+                    img.src = src;
+                    grid.appendChild(img);
+                }
+            });
+
+            return grid;
+        }
+
+        function renderGallery(mediaData) {
+            const gallery = document.getElementById("gallery");
+            gallery.innerHTML = "";
+
+            Object.keys(mediaData).forEach(category => {
+                const section = document.createElement("div");
+                section.className = "section";
+
+                const title = document.createElement("h2");
+                title.textContent = categoryTitles[category] || category;
+                section.appendChild(title);
+
+                if (mediaData[category].videos.length > 0) {
+                    const videoTitle = document.createElement("h3");
+                    videoTitle.textContent = "Training Videos";
+                    section.appendChild(videoTitle);
+                    section.appendChild(createMediaGrid(mediaData[category].videos, true));
+                }
+
+                if (mediaData[category].images.length > 0) {
+                    const imageTitle = document.createElement("h3");
+                    imageTitle.textContent = "Testing Images";
+                    section.appendChild(imageTitle);
+                    section.appendChild(createMediaGrid(mediaData[category].images, false));
+                }
+
+                gallery.appendChild(section);
+            });
+
+            const videos = document.querySelectorAll("video[data-src]");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    let video = entry.target;
+                    if (entry.isIntersecting) {
+                        if (video.dataset.src) {
+                            video.src = video.dataset.src;
+                            video.removeAttribute("data-src");
+                        }
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.98 });
+
+            videos.forEach(video => observer.observe(video));
+        }
+    </script>
+</body>
+
+</html>

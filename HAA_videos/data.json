@@ -1,0 +1,374 @@
+{
+    "pushup": {
+        "videos": [
+            "pushup/pushup_013.mp4",
+            "pushup/pushup_012.mp4",
+            "pushup/pushup_001.mp4",
+            "pushup/pushup_008.mp4",
+            "pushup/pushup_002.mp4",
+            "pushup/pushup_003.mp4",
+            "pushup/pushup_009.mp4",
+            "pushup/pushup_015.mp4",
+            "pushup/pushup_004.mp4",
+            "pushup/pushup_014.mp4",
+            "pushup/pushup_005.mp4",
+            "pushup/pushup_006.mp4",
+            "pushup/pushup_011.mp4",
+            "pushup/pushup_010.mp4"
+        ],
+        "images": [
+            "pushup/pushup_016.jpg",
+            "pushup/pushup_018.jpg",
+            "pushup/pushup_017.jpg",
+            "pushup/pushup_019.jpg"
+        ]
+    },
+    "backflip": {
+        "videos": [
+            "backflip/backflip_004.mp4",
+            "backflip/backflip_000.mp4",
+            "backflip/backflip_002.mp4",
+            "backflip/backflip_015.mp4",
+            "backflip/backflip_006.mp4",
+            "backflip/backflip_003.mp4",
+            "backflip/backflip_009.mp4",
+            "backflip/backflip_005.mp4",
+            "backflip/backflip_010.mp4",
+            "backflip/backflip_014.mp4",
+            "backflip/backflip_013.mp4",
+            "backflip/backflip_001.mp4",
+            "backflip/backflip_008.mp4"
+        ],
+        "images": [
+            "backflip/backflip_019.jpg",
+            "backflip/backflip_017.jpg",
+            "backflip/backflip_018.jpg",
+            "backflip/backflip_016.jpg"
+        ]
+    },
+    "hugging_human": {
+        "videos": [
+            "hugging_human/hugging_human_011.mp4",
+            "hugging_human/hugging_human_004.mp4",
+            "hugging_human/hugging_human_013.mp4",
+            "hugging_human/hugging_human_015.mp4",
+            "hugging_human/hugging_human_005.mp4",
+            "hugging_human/hugging_human_010.mp4",
+            "hugging_human/hugging_human_001.mp4",
+            "hugging_human/hugging_human_014.mp4",
+            "hugging_human/hugging_human_007.mp4",
+            "hugging_human/hugging_human_002.mp4",
+            "hugging_human/hugging_human_003.mp4"
+        ],
+        "images": [
+            "hugging_human/hugging_human_017.jpg",
+            "hugging_human/hugging_human_019.jpg",
+            "hugging_human/hugging_human_018.jpg",
+            "hugging_human/hugging_human_016.jpg"
+        ]
+    },
+    "face_slapping": {
+        "videos": [
+            "face_slapping/face_slapping_012.mp4",
+            "face_slapping/face_slapping_007.mp4",
+            "face_slapping/face_slapping_011.mp4",
+            "face_slapping/face_slapping_006.mp4",
+            "face_slapping/face_slapping_002.mp4",
+            "face_slapping/face_slapping_000.mp4",
+            "face_slapping/face_slapping_004.mp4",
+            "face_slapping/face_slapping_005.mp4",
+            "face_slapping/face_slapping_015.mp4",
+            "face_slapping/face_slapping_003.mp4",
+            "face_slapping/face_slapping_001.mp4"
+        ],
+        "images": [
+            "face_slapping/face_slapping_018.jpg",
+            "face_slapping/face_slapping_019.jpg",
+            "face_slapping/face_slapping_016.jpg",
+            "face_slapping/face_slapping_017.jpg"
+        ]
+    },
+    "balancebeam_spin": {
+        "videos": [
+            "balancebeam_spin/balancebeam_spin_006.mp4",
+            "balancebeam_spin/balancebeam_spin_001.mp4",
+            "balancebeam_spin/balancebeam_spin_013.mp4",
+            "balancebeam_spin/balancebeam_spin_003.mp4",
+            "balancebeam_spin/balancebeam_spin_010.mp4",
+            "balancebeam_spin/balancebeam_spin_005.mp4",
+            "balancebeam_spin/balancebeam_spin_002.mp4",
+            "balancebeam_spin/balancebeam_spin_015.mp4",
+            "balancebeam_spin/balancebeam_spin_008.mp4",
+            "balancebeam_spin/balancebeam_spin_014.mp4",
+            "balancebeam_spin/balancebeam_spin_007.mp4",
+            "balancebeam_spin/balancebeam_spin_012.mp4",
+            "balancebeam_spin/balancebeam_spin_004.mp4"
+        ],
+        "images": [
+            "balancebeam_spin/balancebeam_spin_016.jpg",
+            "balancebeam_spin/balancebeam_spin_018.jpg",
+            "balancebeam_spin/balancebeam_spin_017.jpg",
+            "balancebeam_spin/balancebeam_spin_019.jpg"
+        ]
+    },
+    "basketball_hookshot": {
+        "videos": [
+            "basketball_hookshot/basketball_hookshot_015.mp4",
+            "basketball_hookshot/basketball_hookshot_007.mp4",
+            "basketball_hookshot/basketball_hookshot_006.mp4",
+            "basketball_hookshot/basketball_hookshot_008.mp4",
+            "basketball_hookshot/basketball_hookshot_002.mp4",
+            "basketball_hookshot/basketball_hookshot_009.mp4",
+            "basketball_hookshot/basketball_hookshot_004.mp4",
+            "basketball_hookshot/basketball_hookshot_013.mp4",
+            "basketball_hookshot/basketball_hookshot_003.mp4",
+            "basketball_hookshot/basketball_hookshot_011.mp4",
+            "basketball_hookshot/basketball_hookshot_010.mp4",
+            "basketball_hookshot/basketball_hookshot_012.mp4",
+            "basketball_hookshot/basketball_hookshot_000.mp4",
+            "basketball_hookshot/basketball_hookshot_005.mp4"
+        ],
+        "images": [
+            "basketball_hookshot/basketball_hookshot_018.jpg",
+            "basketball_hookshot/basketball_hookshot_016.jpg",
+            "basketball_hookshot/basketball_hookshot_019.jpg",
+            "basketball_hookshot/basketball_hookshot_017.jpg"
+        ]
+    },
+    "canoeing_sprint": {
+        "videos": [
+            "canoeing_sprint/canoeing_sprint_013.mp4",
+            "canoeing_sprint/canoeing_sprint_011.mp4",
+            "canoeing_sprint/canoeing_sprint_004.mp4",
+            "canoeing_sprint/canoeing_sprint_014.mp4",
+            "canoeing_sprint/canoeing_sprint_003.mp4",
+            "canoeing_sprint/canoeing_sprint_010.mp4",
+            "canoeing_sprint/canoeing_sprint_012.mp4",
+            "canoeing_sprint/canoeing_sprint_015.mp4",
+            "canoeing_sprint/canoeing_sprint_002.mp4",
+            "canoeing_sprint/canoeing_sprint_009.mp4",
+            "canoeing_sprint/canoeing_sprint_008.mp4",
+            "canoeing_sprint/canoeing_sprint_006.mp4",
+            "canoeing_sprint/canoeing_sprint_001.mp4",
+            "canoeing_sprint/canoeing_sprint_005.mp4",
+            "canoeing_sprint/canoeing_sprint_000.mp4",
+            "canoeing_sprint/canoeing_sprint_007.mp4"
+        ],
+        "images": [
+            "canoeing_sprint/canoeing_sprint_018.jpg",
+            "canoeing_sprint/canoeing_sprint_016.jpg",
+            "canoeing_sprint/canoeing_sprint_017.jpg",
+            "canoeing_sprint/canoeing_sprint_019.jpg"
+        ]
+    },
+    "soccer_shoot": {
+        "videos": [
+            "soccer_shoot/soccer_shoot_011.mp4",
+            "soccer_shoot/soccer_shoot_002.mp4",
+            "soccer_shoot/soccer_shoot_006.mp4",
+            "soccer_shoot/soccer_shoot_001.mp4",
+            "soccer_shoot/soccer_shoot_008.mp4",
+            "soccer_shoot/soccer_shoot_014.mp4",
+            "soccer_shoot/soccer_shoot_005.mp4",
+            "soccer_shoot/soccer_shoot_007.mp4",
+            "soccer_shoot/soccer_shoot_003.mp4",
+            "soccer_shoot/soccer_shoot_015.mp4"
+        ],
+        "images": [
+            "soccer_shoot/soccer_shoot_016.jpg",
+            "soccer_shoot/soccer_shoot_018.jpg",
+            "soccer_shoot/soccer_shoot_017.jpg",
+            "soccer_shoot/soccer_shoot_019.jpg"
+        ]
+    },
+    "shoot_dance": {
+        "videos": [
+            "shoot_dance/shoot_dance_002.mp4",
+            "shoot_dance/shoot_dance_003.mp4",
+            "shoot_dance/shoot_dance_008.mp4",
+            "shoot_dance/shoot_dance_006.mp4",
+            "shoot_dance/shoot_dance_011.mp4",
+            "shoot_dance/shoot_dance_014.mp4",
+            "shoot_dance/shoot_dance_007.mp4",
+            "shoot_dance/shoot_dance_001.mp4",
+            "shoot_dance/shoot_dance_010.mp4",
+            "shoot_dance/shoot_dance_013.mp4",
+            "shoot_dance/shoot_dance_005.mp4",
+            "shoot_dance/shoot_dance_012.mp4",
+            "shoot_dance/shoot_dance_004.mp4",
+            "shoot_dance/shoot_dance_009.mp4"
+        ],
+        "images": [
+            "shoot_dance/shoot_dance_018.jpg",
+            "shoot_dance/shoot_dance_016.jpg",
+            "shoot_dance/shoot_dance_017.jpg",
+            "shoot_dance/shoot_dance_019.jpg"
+        ]
+    },
+    "drinking_with_cup": {
+        "videos": [
+            "drinking_with_cup/drinking_with_cup_008.mp4",
+            "drinking_with_cup/drinking_with_cup_009.mp4",
+            "drinking_with_cup/drinking_with_cup_000.mp4",
+            "drinking_with_cup/drinking_with_cup_014.mp4",
+            "drinking_with_cup/drinking_with_cup_007.mp4",
+            "drinking_with_cup/drinking_with_cup_005.mp4",
+            "drinking_with_cup/drinking_with_cup_001.mp4",
+            "drinking_with_cup/drinking_with_cup_002.mp4",
+            "drinking_with_cup/drinking_with_cup_015.mp4",
+            "drinking_with_cup/drinking_with_cup_006.mp4",
+            "drinking_with_cup/drinking_with_cup_011.mp4",
+            "drinking_with_cup/drinking_with_cup_004.mp4",
+            "drinking_with_cup/drinking_with_cup_013.mp4"
+        ],
+        "images": [
+            "drinking_with_cup/drinking_with_cup_016.jpg",
+            "drinking_with_cup/drinking_with_cup_019.jpg",
+            "drinking_with_cup/drinking_with_cup_018.jpg",
+            "drinking_with_cup/drinking_with_cup_017.jpg"
+        ]
+    },
+    "chopping_wood": {
+        "videos": [
+            "chopping_wood/chopping_wood_003.mp4",
+            "chopping_wood/chopping_wood_011.mp4",
+            "chopping_wood/chopping_wood_006.mp4",
+            "chopping_wood/chopping_wood_014.mp4",
+            "chopping_wood/chopping_wood_007.mp4",
+            "chopping_wood/chopping_wood_013.mp4",
+            "chopping_wood/chopping_wood_009.mp4",
+            "chopping_wood/chopping_wood_012.mp4",
+            "chopping_wood/chopping_wood_015.mp4",
+            "chopping_wood/chopping_wood_000.mp4",
+            "chopping_wood/chopping_wood_001.mp4",
+            "chopping_wood/chopping_wood_010.mp4",
+            "chopping_wood/chopping_wood_004.mp4",
+            "chopping_wood/chopping_wood_008.mp4",
+            "chopping_wood/chopping_wood_005.mp4"
+        ],
+        "images": [
+            "chopping_wood/chopping_wood_017.jpg",
+            "chopping_wood/chopping_wood_018.jpg",
+            "chopping_wood/chopping_wood_019.jpg",
+            "chopping_wood/chopping_wood_016.jpg"
+        ]
+    },
+    "ALS_IceBucket_Challenge": {
+        "videos": [
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_011.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_004.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_006.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_008.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_012.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_009.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_003.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_014.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_000.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_013.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_010.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_005.mp4",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_002.mp4"
+        ],
+        "images": [
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_019.jpg",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_018.jpg",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_016.jpg",
+            "ALS_IceBucket_Challenge/ALS_IceBucket_Challenge_017.jpg"
+        ]
+    },
+    "sprint_run": {
+        "videos": [
+            "sprint_run/sprint_run_008.mp4",
+            "sprint_run/sprint_run_013.mp4",
+            "sprint_run/sprint_run_011.mp4",
+            "sprint_run/sprint_run_005.mp4",
+            "sprint_run/sprint_run_000.mp4",
+            "sprint_run/sprint_run_004.mp4",
+            "sprint_run/sprint_run_014.mp4",
+            "sprint_run/sprint_run_002.mp4",
+            "sprint_run/sprint_run_010.mp4",
+            "sprint_run/sprint_run_009.mp4",
+            "sprint_run/sprint_run_001.mp4",
+            "sprint_run/sprint_run_006.mp4",
+            "sprint_run/sprint_run_003.mp4",
+            "sprint_run/sprint_run_007.mp4"
+        ],
+        "images": [
+            "sprint_run/sprint_run_019.jpg",
+            "sprint_run/sprint_run_018.jpg",
+            "sprint_run/sprint_run_017.jpg",
+            "sprint_run/sprint_run_016.jpg"
+        ]
+    },
+    "arm_wave": {
+        "videos": [
+            "arm_wave/arm_wave_000.mp4",
+            "arm_wave/arm_wave_014.mp4",
+            "arm_wave/arm_wave_013.mp4",
+            "arm_wave/arm_wave_009.mp4",
+            "arm_wave/arm_wave_004.mp4",
+            "arm_wave/arm_wave_012.mp4",
+            "arm_wave/arm_wave_001.mp4",
+            "arm_wave/arm_wave_011.mp4",
+            "arm_wave/arm_wave_015.mp4",
+            "arm_wave/arm_wave_010.mp4",
+            "arm_wave/arm_wave_002.mp4",
+            "arm_wave/arm_wave_008.mp4",
+            "arm_wave/arm_wave_005.mp4",
+            "arm_wave/arm_wave_006.mp4"
+        ],
+        "images": [
+            "arm_wave/arm_wave_017.jpg",
+            "arm_wave/arm_wave_016.jpg",
+            "arm_wave/arm_wave_018.jpg",
+            "arm_wave/arm_wave_019.jpg"
+        ]
+    },
+    "running_in_place": {
+        "videos": [
+            "running_in_place/running_in_place_014.mp4",
+            "running_in_place/running_in_place_008.mp4",
+            "running_in_place/running_in_place_002.mp4",
+            "running_in_place/running_in_place_010.mp4",
+            "running_in_place/running_in_place_006.mp4",
+            "running_in_place/running_in_place_012.mp4",
+            "running_in_place/running_in_place_004.mp4",
+            "running_in_place/running_in_place_011.mp4",
+            "running_in_place/running_in_place_005.mp4",
+            "running_in_place/running_in_place_001.mp4",
+            "running_in_place/running_in_place_000.mp4",
+            "running_in_place/running_in_place_013.mp4"
+        ],
+        "images": [
+            "running_in_place/running_in_place_016.jpg",
+            "running_in_place/running_in_place_017.jpg",
+            "running_in_place/running_in_place_018.jpg",
+            "running_in_place/running_in_place_019.jpg"
+        ]
+    },
+    "balancebeam_jump": {
+        "videos": [
+            "balancebeam_jump/balancebeam_jump_005.mp4",
+            "balancebeam_jump/balancebeam_jump_014.mp4",
+            "balancebeam_jump/balancebeam_jump_006.mp4",
+            "balancebeam_jump/balancebeam_jump_002.mp4",
+            "balancebeam_jump/balancebeam_jump_008.mp4",
+            "balancebeam_jump/balancebeam_jump_000.mp4",
+            "balancebeam_jump/balancebeam_jump_015.mp4",
+            "balancebeam_jump/balancebeam_jump_003.mp4",
+            "balancebeam_jump/balancebeam_jump_012.mp4",
+            "balancebeam_jump/balancebeam_jump_009.mp4",
+            "balancebeam_jump/balancebeam_jump_007.mp4",
+            "balancebeam_jump/balancebeam_jump_011.mp4",
+            "balancebeam_jump/balancebeam_jump_013.mp4",
+            "balancebeam_jump/balancebeam_jump_004.mp4",
+            "balancebeam_jump/balancebeam_jump_010.mp4"
+        ],
+        "images": [
+            "balancebeam_jump/balancebeam_jump_018.jpg",
+            "balancebeam_jump/balancebeam_jump_019.jpg",
+            "balancebeam_jump/balancebeam_jump_016.jpg",
+            "balancebeam_jump/balancebeam_jump_017.jpg"
+        ]
+    }
+}
