@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Human Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        h1 {
+            margin: 30px 0;
+            font-size: 2.5em;
+            justify-content: center;
+            color: #333;
+        }
+        h2 {
+            margin: 30px 0;
+            font-size: 1.5em;
+            justify-content: center;
+            color: #333;
+        }
+        h3 {
+            text-align: left;
+            width: 100%;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+        }
+        .image-container img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+        }
+
+        .small-image {
+            width: 110px !important;
+            height: 110px !important;
+            object-fit: cover;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px; 
+        }
+        .column-text {
+            font-weight: bold;
+        }
+        
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+        }
+        .group img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animating Images to Portray Human Actions</h1>
+    <br><br>
+
+    <h2>Comparison with baselines</h2>
+    <section id="section2">
+    <div class="container" id="image-gallery-2"></div>
+    <script>
+        // Function to create image containers dynamically
+        function createImageContainer(caption, start_ind) {
+            const container = document.getElementById('image-gallery-2');
+
+            const getPaddedIndex = (index) => String(index).padStart(3, '0');
+
+            const actionTemplate = `
+                <h3>Action Description: ${caption}</h3>
+                <br>
+                <div class="image-container">
+                    <div class="column">
+                        <div class="column-text">Ref. Img</div>
+                        <img src="comparisons/${getPaddedIndex(start_ind)}.jpg" alt="Image ${start_ind}">
+                    </div>
+                    <div class="column">
+                        <div class="column-text">FLASH</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-g.mp4" alt="Video ${start_ind}-g">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">LAMP</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-f.mp4" alt="Video ${start_ind}-f">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">DynamiCrafter</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-d.mp4" alt="Video ${start_ind}-d">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">MotionDirector</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-h.mp4" alt="Video ${start_ind}-f">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">DreamVideo</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-e.mp4" alt="Video ${start_ind}-e">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">PIA</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-b.mp4" alt="Video ${start_ind}-b">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">SparseCtrl</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-c.mp4" alt="Video ${start_ind}-c">
+                        </video>
+                    </div>
+                    <div class="column">
+                        <div class="column-text">TI2V-Zero</div>
+                        <video class="small-image" autoplay loop muted preload="none">
+                            <source src="comparisons/${getPaddedIndex(start_ind)}-a.mp4" alt="Video ${start_ind}-a">
+                        </video>
+                    </div>
+                </div>
+                <br><br><br>
+            `;
+
+            // Append generated content to the container
+            container.innerHTML += actionTemplate;
+        }
+
+        // Create multiple image containers with different starting indices
+        createImageContainer('A person is running in place.', 10);
+        createImageContainer('A person is performing an arm wave.', 12);
+        createImageContainer('A person is drinking from a cup.', 24);
+        createImageContainer('A person is drinking from a cup.', 25);
+    </script>
+    </section>
+    <br>
+
+    
+</body>
+<br>
+</html>
+
+
