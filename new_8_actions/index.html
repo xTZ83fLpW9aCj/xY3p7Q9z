@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Human Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        h1 {
+            margin: 30px 0;
+            font-size: 2.5em;
+            justify-content: center;
+            color: #333;
+        }
+        h2 {
+            margin: 30px 0;
+            font-size: 1.5em;
+            justify-content: center;
+            color: #333;
+        }
+        h3 {
+            text-align: left;
+            width: 100%;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+        }
+        .image-container img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .large-image {
+            width: 180px !important;
+            height: 180px !important;
+            object-fit: cover;
+        }
+        .small-image {
+            width: 120px !important;
+            height: 120px !important;
+            object-fit: cover;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; 
+        }
+        .column-text {
+            font-weight: bold;
+        }
+        
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+        }
+        .group img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animating Images to Portray Human Actions</h1>
+    <br><br>
+
+    <h2>Comparison of Wan and FLASH</h2>
+    <section id="section1">
+        <div class="container" id="image-gallery-1"></div>
+        <script>
+            // Function to create image containers dynamically
+            function createImageContainer(action, caption, start_ind) {
+                const container = document.getElementById('image-gallery-1');
+    
+                const getPaddedIndex = (index) => String(index);
+    
+                const actionTemplate = `
+                    <h3>Action Description: ${caption}</h3>
+                    <br>
+                    <div class="image-container">
+                        <div class="column">
+                            <div class="column-text">Reference Image</div>
+                            <img src="${action}_${getPaddedIndex(start_ind)}.jpg" class="large-image" alt="Image ${start_ind}">
+                            <img src="${action}_${getPaddedIndex(start_ind+1)}.jpg" class="large-image" alt="Image ${start_ind+1}">
+                            <img src="${action}_${getPaddedIndex(start_ind+2)}.jpg" class="large-image" alt="Image ${start_ind+2}">
+                            <img src="${action}_${getPaddedIndex(start_ind+3)}.jpg" class="large-image" alt="Image ${start_ind+3}">
+                        </div>
+                        <div class="column">
+                            <div class="column-text">WAN</div>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind)}_wan.mp4" alt="Video ${start_ind}-wan">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+1)}_wan.mp4" alt="Video ${start_ind+1}-wan">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+2)}_wan.mp4" alt="Video ${start_ind+2}-wan">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+3)}_wan.mp4" alt="Video ${start_ind+3}-wan">
+                            </video>
+                        </div>
+                        <div class="column">
+                            <div class="column-text">FLASH</div>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind)}_flash.mp4" alt="Video ${start_ind}-flash">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+1)}_flash.mp4" alt="Video ${start_ind+1}-flash">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+2)}_flash.mp4" alt="Video ${start_ind+2}-flash">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+3)}_flash.mp4" alt="Video ${start_ind+3}-flash">
+                            </video>
+                        </div>
+                        <div class="column">
+                            <div class="column-text">Real Video</div>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind)}.mp4" alt="Video ${start_ind}-gt">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+1)}.mp4" alt="Video ${start_ind+1}-gt">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+2)}.mp4" alt="Video ${start_ind+2}-gt">
+                            </video>
+                            <video class="large-image" autoplay loop muted preload="none" data-src="${action}_${getPaddedIndex(start_ind+3)}.mp4" alt="Video ${start_ind+3}-gt">
+                            </video>
+                        </div>
+                    </div>
+                    <br><br><br>
+                `;
+    
+                // Append generated content to the container
+                container.innerHTML += actionTemplate;
+            }
+    
+            // Create multiple image containers with different starting indices
+            createImageContainer('backward_roll', 'A gymnast is rolling backward on the floor.', 1);
+            createImageContainer('bench_dip', 'A person is performing dips on a bench.', 1);
+            createImageContainer('burpee', 'An athlete is performing a burpee exercise.', 1);
+            createImageContainer('baseball_swing', 'A baseball player is swinging a bat.', 1);
+            createImageContainer('balancebeam_flip', 'An athlete is performing a balance beam flip.', 1);
+            createImageContainer('balancebeam_rotate', 'An athlete is performing a balance beam rotation.', 1);
+            createImageContainer('atlatl_throw', 'A person is throwing a spear with an atlatl.', 1);
+            createImageContainer('axe_throwing', 'A person is throwing an axe at a target.', 1);
+        </script>
+    </section>
+    <br>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll("video[data-src]");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            let video = entry.target;
+            if (entry.isIntersecting) {
+                if (video.dataset.src) {
+                    video.src = video.dataset.src;
+                    video.removeAttribute("data-src");
+                }
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.98 });
+
+    videos.forEach(video => observer.observe(video));
+});
+</script>
+
+</body>
+<br>
+</html>
+
+
